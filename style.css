@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body {
+  margin: 0;
+  font-family: Lato;
+  background-color: #fff;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -29,31 +35,63 @@
           flex-grow: 1;
 }
 
-.header .menu {
-  width: 10%;
+.header .nav__left {
+  width: 111px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style-type: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.header .menu__right {
-  width: 15%;
+.header .nav__right {
+  width: 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.top {
+.header .nav__logo {
+  display: block;
+  width: 44px;
+  height: 38px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header .cart-btn {
+  display: block;
+  width: 42px;
+  height: 37px;
+  background-image: url(img/cart.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+.top-banner {
   background: #F1E4E6;
+  max-width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0 auto;
 }
 
-.top__info {
-  max-width: 1600px;
-  margin: 0 auto;
+.top-banner__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,20 +103,49 @@
           flex-grow: 1;
 }
 
-.top__photo {
+.top-banner__photo {
   margin-right: 64px;
+  max-width: 50%;
 }
 
-.top__info__brand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.top-banner__info__brand {
+  text-transform: uppercase;
+  width: 397px;
+  margin: 0 100px 90px 0;
+  position: relative;
 }
 
-.top .block {
-  background: #F16D7F;
+.top-banner__info__brand:before {
+  content: "";
+  display: block;
   width: 12px;
   height: 92px;
-  margin-right: 16px;
+  background-color: #F16D7F;
+  position: absolute;
+  top: 0;
+  left: -28px;
+}
+
+.top-banner .top-banner__title {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: #222222;
+}
+
+.top-banner .top-banner__subtitle {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+
+.top-banner .top-banner__subtitle:after {
+  content: 'fashion';
+  color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

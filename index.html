@@ -12,33 +12,29 @@
 <body>
 	<header class="header">
 		<nav class="nav container">
-			<ul class="menu">
-				<li class="menu__list"><a href="#" class="menu__link"></a><img src="img/logo.svg" alt="logo"
-						class="menu__img"></li>
-				<li class="menu__list"><a href="#" class="menu__link"></a><img src="img/search.svg" alt="search"
-						class="menu__img"></li>
-			</ul>
-			<ul class="menu menu__right">
-				<li class="menu__list"><a href="#" class="menu__link"></a><img src="img/menu.svg" alt="menu"
-						class="menu__img"></li>
-				<li class="menu__list"><a href="#" class="menu__link"></a><img src="img/login.svg" alt="login"
-						class="menu__img"></li>
-				<li class="menu__list"><a href="#" class="menu__link"></a><img src="img/chart.svg" alt="chart"
-						class="menu__img"></li>
-			</ul>
+			<div class="nav__left">
+				<a href="index.html" class="nav__logo"><img src="img/logo.svg" alt="logo"></a>
+				<a href="#" class="menu__link"><img src="img/search.svg" alt="search"></a>
+			</div>
+			<div class="nav__right">
+				<a href="#" class="menu__link"><img src="img/menu.svg" alt="menu"></a>
+				<a href="#" class="menu__link"><img src="img/login.svg" alt="login"></a>
+				<button class="cart-btn"></button>
+			</div>
 		</nav>
 	</header>
-	<div class="top">
-		<div class="top__info">
-			<img class="top__photo" src="img/top_photo.png" alt="top_photo">
-			<div class="top__info__brand">
-				<div class="block"></div>
-				<img src="img/Brand.svg" alt="brand" class="brand">
+	<main class="content">
+		<section class="top-banner">
+			<img class="top-banner__photo" src="img/top_photo.png" alt="top_photo">
+			<div class="top-banner__info">
+				<div class="top-banner__info__brand">
+					<h2 class="top-banner__title">the brand</h2>
+					<span class="top-banner__subtitle">of luxerious
+					</span>
+				</div>
 			</div>
-		</div>
-	</div>
-
-	<main class="content"></main>
+		</section>
+	</main>
 	<footer class="footer"></footer>
 
 </body>

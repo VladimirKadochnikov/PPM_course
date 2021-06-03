@@ -2,7 +2,11 @@
 	margin: 0;
 	padding: 0;
 }
-
+body {
+	margin: 0;
+	font-family: Lato;
+	background-color: #fff;
+  }
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
@@ -17,36 +21,88 @@
 		align-items: center;
 		flex-grow: 1;
 	}
-	.menu {
-		width: 10%;
+	.nav__left {
+		width: 111px;
 		display: flex;
 		justify-content: space-between;
-		list-style-type: none;
 		align-items: center;
-		&__right {
-			width: 15%;
-		}
 	}
-}
-.top {
-	background: #F1E4E6;
-	&__info {
-		max-width: 1600px;
-		margin: 0 auto;
+	.nav__right {
+		width: 168px;
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		}
+	.nav__logo {
+		display: block;
+		width: 44px;
+		height: 38px;
+		text-decoration: none;
+		color: #fff;
+	}
+	.cart-btn {
+		display: block;
+		width: 42px;
+		height: 37px;
+		background-image: url(img/cart.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-color: transparent;
+	}
+	
+}
+.top-banner {
+	background: #F1E4E6;
+	max-width: 1600px;
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;	
+	&__info {
+		display: flex;	
 		align-items: center;
 		flex-grow: 1;
 	}
 	&__photo {
 		margin-right: 64px;
+		max-width: 50%;
 	}
 	&__info__brand {
-		display: flex;
+		text-transform: uppercase;
+		width: 397px;
+		margin: 0 100px 90px 0;
+		position: relative;
 	}
-	.block {
-		background: #F16D7F;
+	&__info__brand:before {
+		content: "";
+		display: block;
 		width: 12px;
 		height: 92px;
-		margin-right: 16px;
+		background-color: #F16D7F;
+		position: absolute;
+		top: 0;
+		left: -28px;
 	}
+	
+	.top-banner__title {
+		display: block;
+		width: 100%;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 48px;
+		line-height: 57.6px;
+		color: #222222;
+	}
+	.top-banner__subtitle {
+		display: block;
+		width: 100%;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 38.4px;
+	}
+	.top-banner__subtitle:after {
+		content: 'fashion';
+		color: #F16D7F;
+
+	}
+	
 }
